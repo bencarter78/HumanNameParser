@@ -1,17 +1,7 @@
-Name:			HumanNameParse.php
+#Human Name Parser
+Forked from [https://github.com/jasonpriem/HumanNameParser.php]
 
-Version:		0.2
-
-Date:			6 Sept. 2010
-
-Author:		Jason Priem <jason@jasonpriem.com>
-
-Website:		<http://jasonpriem.com/human-name-parse>
-
-License:		<http://www.opensource.org/licenses/mit-license.php>
-
-
-# Description
+### Description
 Takes human names of arbitrary complexity and various wacky formats like:
 
 * J. Walter Weatherman 
@@ -24,12 +14,14 @@ and parses out the:
 * first name (or first initial in a name like 'R. Crumb')
 * nicknames (like "Jimmy" in "James C. ('Jimmy') O'Dell, Jr.")
 * middle names
-* last name (including compound ones like "van der Sar' and "Ortega y Gasset"), and
+* surname (including compound ones like "van der Sar' and "Ortega y Gasset"), and
 * suffix (like 'Jr.', 'III')
 
-###Example usage
-$parser = new Parser("John Q. Smith");
+###Example Usage
+```
+$parser = new Tck\HumanNameParser\Parser("John Q. Smith");
 
-echo  $parser->getLast() . ", " . $parser->getFirst();
+echo  $parser->surname() . ", " . $parser->firstName();
 
-returns "Smith, John"
+// returns "Smith, John"
+```
