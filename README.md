@@ -17,7 +17,7 @@ and parses out the:
 * surname (including compound ones like "van der Sar' and "Ortega y Gasset"), and
 * suffix (like 'Jr.', 'III')
 
-###Example Usage
+### Example Usage
 
 ```php
 $parser = new Tck\HumanNameParser\Parser("John Q. Smith");
