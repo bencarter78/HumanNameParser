@@ -37,7 +37,7 @@ class Name
      * @param String $string a utf8-encoding string.
      * @return Bool True on success
      */
-    private function setString($string)
+    public function setString($string)
     {
         $this->isUTF8Encoded($string);
         $this->string = $string;
