@@ -18,10 +18,9 @@ and parses out the:
 * suffix (like 'Jr.', 'III')
 
 ###Example Usage
-```
+
+```php
 $parser = new Tck\HumanNameParser\Parser("John Q. Smith");
-
 echo  $parser->surname() . ", " . $parser->firstName();
-
 // returns "Smith, John"
 ```
