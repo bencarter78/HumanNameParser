@@ -27,3 +27,9 @@ and parses out the:
 * last name (including compound ones like "van der Sar' and "Ortega y Gasset"), and
 * suffix (like 'Jr.', 'III')
 
+###Example usage
+$parser = new Parser("John Q. Smith");
+
+echo  $parser->getLast() . ", " . $parser->getFirst();
+
+returns "Smith, John"
