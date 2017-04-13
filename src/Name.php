@@ -2,6 +2,8 @@
 
 namespace Tck\HumanNameParser;
 
+use Exception;
+
 class Name
 {
     /**
