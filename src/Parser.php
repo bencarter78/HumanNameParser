@@ -60,7 +60,6 @@ class Parser
     public function __construct($string = null)
     {
         $this->setString($string);
-        $this->parse();
     }
 
     /**
@@ -73,6 +72,7 @@ class Parser
     public function setString($string = null)
     {
         $this->string = new Name($string);
+        $this->parse();
     }
 
     /**
@@ -190,6 +190,7 @@ class Parser
     {
         $suffixes = implode("\.*|", $this->suffixes) . "\.*";
         $regex = "/,* *($suffixes)$/";
-        $this->suffix = $this->string->chopWithRegex($regex, 1);;
+        $this->suffix = $this->string->chopWithRegex($regex, 1);
+        ;
     }
 }
